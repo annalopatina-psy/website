@@ -1,0 +1,115 @@
+/* Design Tokens — warm sage/cream palette inspired by rachelheals.com */
+:root {
+  /* Colors */
+  --color-primary: #5b8a72;
+  --color-primary-light: #e8f0eb;
+  --color-accent: #c4a882;
+  --color-bg: #faf8f5;
+  --color-bg-alt: #f0ece6;
+  --color-fg: #2d3436;
+  --color-fg-mid: #636e72;
+  --color-border: #e0dbd3;
+  --color-surface: #ffffff;
+  --color-focus: #5b8a72;
+  --color-danger: #b91c1c;
+  --color-warning: #b45309;
+  --color-success: #047857;
+  --color-info: #0369a1;
+
+  /* Typography */
+  --font-heading: 'DM Sans', system-ui, sans-serif;
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+
+  /* Font sizes (bumped base to 17px, expanded scale) */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1.0625rem;
+  --font-size-md: 1.1875rem;
+  --font-size-lg: 1.375rem;
+  --font-size-xl: 1.5625rem;
+  --font-size-2xl: 1.875rem;
+  --font-size-3xl: 2.25rem;
+  --font-size-4xl: 2.75rem;
+  --font-size-5xl: 3.5rem;
+
+  /* Line heights */
+  --line-height-tight: 1.15;
+  --line-height-snug: 1.3;
+  --line-height-normal: 1.6;
+  --line-height-relaxed: 1.75;
+
+  /* Spacing scale */
+  --space-0: 0;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 40px;
+  --space-8: 56px;
+  --space-9: 72px;
+  --space-10: 100px;
+  --space-11: 120px;
+
+  /* Radii */
+  --radius-sm: 3px;
+  --radius-md: 6px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-round: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.06), 0 1px 1px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.10), 0 2px 4px -1px rgba(0,0,0,0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.10), 0 4px 6px -2px rgba(0,0,0,0.05);
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.06);
+  --shadow-card-hover: 0 4px 12px rgba(0,0,0,0.10), 0 8px 24px rgba(0,0,0,0.08);
+
+  /* Content width */
+  --content-max: 70ch;
+  --content-max-wide: 1200px;
+
+  /* Transition */
+  --transition-fast: 120ms ease;
+  --transition-base: 180ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: 0ms;
+    --transition-base: 0ms;
+  }
+}
+
+/* Dark mode (auto + manual override) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #1a1f1c;
+    --color-bg-alt: #242b26;
+    --color-fg: #ede9e3;
+    --color-fg-mid: #b8b2a8;
+    --color-border: #3a4038;
+    --color-surface: #242b26;
+  }
+}
+
+:root[data-theme='dark'] {
+  --color-bg: #1a1f1c;
+  --color-bg-alt: #242b26;
+  --color-fg: #ede9e3;
+  --color-fg-mid: #b8b2a8;
+  --color-border: #3a4038;
+  --color-surface: #242b26;
+}
+
+:root[data-theme='light'] {
+  --color-bg: #faf8f5;
+  --color-bg-alt: #f0ece6;
+  --color-fg: #2d3436;
+  --color-fg-mid: #636e72;
+  --color-border: #e0dbd3;
+  --color-surface: #ffffff;
+}

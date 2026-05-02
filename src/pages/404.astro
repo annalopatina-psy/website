@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<Layout description="Запрошенная страница не существует." noindex={true}>
+  <section class="section">
+    <div class="container-wide" style="text-align:center;">
+      <h1>404 — Страница не найдена</h1>
+      <p>К сожалению, запрошенная страница не найдена.</p>
+      <p><a href={base + '/'} class="btn">На главную</a></p>
+    </div>
+  </section>
+</Layout>
