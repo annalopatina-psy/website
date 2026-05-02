@@ -4,7 +4,7 @@
 
 Lean, privacy‑aware informational site with scheduling.
  
-![Deploy](https://github.com/heywood8/ducksandhorses-website/actions/workflows/deploy.yml/badge.svg)
+![Deploy](https://github.com/annalopatina-psy/website/actions/workflows/deploy.yml/badge.svg)
 
 </div>
 
@@ -27,7 +27,7 @@ Non‑goals (for now): blog/articles, newsletter signup, internationalization, c
 
 Strategic development plan & implementation guide. This document is the authoritative roadmap the agentic workflow will follow phase by phase.
 
-![Deploy](https://github.com/heywood8/ducksandhorses-website/actions/workflows/deploy.yml/badge.svg)
+![Deploy](https://github.com/annalopatina-psy/website/actions/workflows/deploy.yml/badge.svg)
 
 </div>
 
@@ -382,7 +382,7 @@ Notes:
 * Current `site` config: `https://heywood8.github.io/ducksandhorses_website` — ensure repository name alignment (rename repo or adjust `site` if changed to a vanity domain later).
 * Custom Domain: After adding a custom domain in Pages settings, also update `site` in `astro.config.mjs` and add DNS records (CNAME / A as instructed by GitHub) plus a `CNAME` file (GitHub auto-injects when configured).
 * Cache: Pages handles CDN caching; purge by redeploy (new commit) or updating domain settings.
-* Project Path Base (`base`): Because this is a project (not user/org root) site, `astro.config.mjs` sets `base: '/ducksandhorses-website'`. All internal links now use `import.meta.env.BASE_URL` to avoid 404s when served from the subpath. If you later move to a custom apex or root (`username.github.io`), remove the `base` option and strip `BASE_URL` prefixes.
+* Project Path Base (`base`): Because this is a project (not user/org root) site, `astro.config.mjs` sets `base: '/website'`. All internal links now use `import.meta.env.BASE_URL` to avoid 404s when served from the subpath. If you later move to a custom apex or root (`username.github.io`), remove the `base` option and strip `BASE_URL` prefixes.
 
 Secrets Needed: None for basic deployment. Add only if integrating analytics or external APIs later.
 
